@@ -1,0 +1,13 @@
+{
+    "name": "vendor/plantilla-para-aplicaciones-base-tpml",
+    "description": "Description of project Plantilla para Aplicaciones base.tpml.",
+    "authors": [
+        {
+            "name": "Ing. Juan Pablo Llinás Ramírez",
+            "email": "jpllinas@ccsm.org.co"
+        }
+    ],
+    "require": {
+        "twig/twig" : "3.0.1"
+    }
+}
