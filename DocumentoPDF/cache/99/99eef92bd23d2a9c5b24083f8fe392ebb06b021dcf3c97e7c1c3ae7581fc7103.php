@@ -68,6 +68,6 @@ class __TwigTemplate_01f08e9c657b92c6e0c40718b5b4d076853a5dec09135c9d85dc8a8334f
     {% include \"mantenimiento.html.php\" %}
 {% else %}    
     {% include \"inicio.html.php\" %}
-{% endif %}", "estructura.tmpl", "C:\\laragon\\www\\AppIndependientesPlantillaBase\\plantilla\\estructura.tmpl");
+{% endif %}", "estructura.tmpl", "C:\\laragon\\www\\DocumentoPDF-Dropzone\\DocumentoPDF\\plantilla\\estructura.tmpl");
     }
 }

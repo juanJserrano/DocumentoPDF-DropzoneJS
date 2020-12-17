@@ -70,14 +70,17 @@
 
 
       <!--   <link rel="stylesheet" href="css/animate.css">  -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-      <script src="https://kit.fontawesome.com/f062c2af32.js" crossorigin="anonymous"></script>       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+        <script src="https://kit.fontawesome.com/f062c2af32.js" crossorigin="anonymous"></script>       
  
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!--animacion de -->
         <link rel="stylesheet" href="css/sweetalert2.min.css">
         <link rel="stylesheet" href="css/magic/magic.min.css">
+        <link rel="stylesheet" href="dropzone-5.7.0/dist/basic.css">
+        <link rel="stylesheet" href="dropzone-5.7.0/dist/dropzone.css">
+        
 
         {% block css %}{% endblock %}
 
@@ -153,6 +156,7 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="dropzone-5.7.0/dist/dropzone.js"></script>
 
       
     

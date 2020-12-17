@@ -152,19 +152,22 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
 
 
       <!--   <link rel=\"stylesheet\" href=\"css/animate.css\">  -->
-      <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css\">
-      <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">
-      <script src=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js\"></script>
-      <script src=\"https://kit.fontawesome.com/f062c2af32.js\" crossorigin=\"anonymous\"></script>       
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css\">
+        <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">
+        <script src=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js\"></script>
+        <script src=\"https://kit.fontawesome.com/f062c2af32.js\" crossorigin=\"anonymous\"></script>       
  
         <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css\" /> <!--animacion de -->
         <link rel=\"stylesheet\" href=\"css/sweetalert2.min.css\">
         <link rel=\"stylesheet\" href=\"css/magic/magic.min.css\">
+        <link rel=\"stylesheet\" href=\"dropzone-5.7.0/dist/basic.css\">
+        <link rel=\"stylesheet\" href=\"dropzone-5.7.0/dist/dropzone.css\">
+        
 
         ";
-        // line 82
+        // line 85
         $this->displayBlock('css', $context, $blocks);
-        // line 83
+        // line 86
         echo "
         <link rel=\"stylesheet\" href=\"css/main.css\"  media=\"screen\" >
         <link rel=\"stylesheet\" href=\"css/print.css\"  media=\"print\" >
@@ -200,16 +203,16 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
         <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">
             <a class=\"navbar-brand\" href=\"/\">
                 ";
-        // line 117
+        // line 120
         $this->displayBlock('logo', $context, $blocks);
-        // line 118
+        // line 121
         echo "            </a>
             <div class=\"collapse navbar-collapse\" id=\"navbarsAplicacionCCSM\">
                 <ul class=\"navbar-nav mr-auto\">
                     ";
-        // line 121
+        // line 124
         $this->displayBlock('menu', $context, $blocks);
-        // line 122
+        // line 125
         echo "                </ul>
             </div>
         </nav>
@@ -218,19 +221,19 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
 
         <main role=\"main\">
             ";
-        // line 129
+        // line 132
         $this->displayBlock('contenido', $context, $blocks);
-        // line 130
+        // line 133
         echo "        </main>
          <footer class=\"text-muted text-center text-small footer \">
             <p class=\"mb-1\">Cámara de Comercio de Santa Marta para el Magdalena &copy; ";
-        // line 132
+        // line 135
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</p>
             ";
-        // line 133
+        // line 136
         $this->displayBlock('piecera', $context, $blocks);
-        // line 134
+        // line 137
         echo "        </footer> 
 
         <div class = \"loader no-print\" style = \"position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999; background-color: rgba(0,0,0,0.7);\" >
@@ -253,11 +256,12 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
 
         <script src=\"js/plugins.js\"></script>
         <script src=\"js/main.js\"></script>
+        <script src=\"dropzone-5.7.0/dist/dropzone.js\"></script>
 
       
     
         ";
-        // line 159
+        // line 163
         $this->displayBlock('js', $context, $blocks);
         echo " 
     
@@ -289,37 +293,37 @@ gtag('config', 'G-ZBTLK22S7Q');
         $macros = $this->macros;
     }
 
-    // line 82
+    // line 85
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 117
+    // line 120
     public function block_logo($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 121
+    // line 124
     public function block_menu($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 129
+    // line 132
     public function block_contenido($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 133
+    // line 136
     public function block_piecera($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 159
+    // line 163
     public function block_js($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -337,7 +341,7 @@ gtag('config', 'G-ZBTLK22S7Q');
 
     public function getDebugInfo()
     {
-        return array (  323 => 159,  317 => 133,  311 => 129,  305 => 121,  299 => 117,  293 => 82,  287 => 39,  261 => 159,  234 => 134,  232 => 133,  228 => 132,  224 => 130,  222 => 129,  213 => 122,  211 => 121,  206 => 118,  204 => 117,  168 => 83,  166 => 82,  139 => 58,  135 => 57,  131 => 56,  127 => 55,  120 => 51,  116 => 50,  112 => 49,  108 => 48,  99 => 42,  95 => 41,  91 => 40,  84 => 39,  44 => 1,);
+        return array (  327 => 163,  321 => 136,  315 => 132,  309 => 124,  303 => 120,  297 => 85,  291 => 39,  265 => 163,  237 => 137,  235 => 136,  231 => 135,  227 => 133,  225 => 132,  216 => 125,  214 => 124,  209 => 121,  207 => 120,  171 => 86,  169 => 85,  139 => 58,  135 => 57,  131 => 56,  127 => 55,  120 => 51,  116 => 50,  112 => 49,  108 => 48,  99 => 42,  95 => 41,  91 => 40,  84 => 39,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -414,14 +418,17 @@ gtag('config', 'G-ZBTLK22S7Q');
 
 
       <!--   <link rel=\"stylesheet\" href=\"css/animate.css\">  -->
-      <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css\">
-      <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">
-      <script src=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js\"></script>
-      <script src=\"https://kit.fontawesome.com/f062c2af32.js\" crossorigin=\"anonymous\"></script>       
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css\">
+        <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">
+        <script src=\"https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js\"></script>
+        <script src=\"https://kit.fontawesome.com/f062c2af32.js\" crossorigin=\"anonymous\"></script>       
  
         <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css\" /> <!--animacion de -->
         <link rel=\"stylesheet\" href=\"css/sweetalert2.min.css\">
         <link rel=\"stylesheet\" href=\"css/magic/magic.min.css\">
+        <link rel=\"stylesheet\" href=\"dropzone-5.7.0/dist/basic.css\">
+        <link rel=\"stylesheet\" href=\"dropzone-5.7.0/dist/dropzone.css\">
+        
 
         {% block css %}{% endblock %}
 
@@ -497,6 +504,7 @@ gtag('config', 'G-ZBTLK22S7Q');
 
         <script src=\"js/plugins.js\"></script>
         <script src=\"js/main.js\"></script>
+        <script src=\"dropzone-5.7.0/dist/dropzone.js\"></script>
 
       
     
@@ -521,6 +529,6 @@ gtag('config', 'G-ZBTLK22S7Q');
         </script>
 
     </body>
-</html>", "base.html.php", "C:\\laragon\\www\\AppIndependientesPlantillaBase\\plantilla\\base.html.php");
+</html>", "base.html.php", "C:\\laragon\\www\\DocumentoPDF-Dropzone\\DocumentoPDF\\plantilla\\base.html.php");
     }
 }
