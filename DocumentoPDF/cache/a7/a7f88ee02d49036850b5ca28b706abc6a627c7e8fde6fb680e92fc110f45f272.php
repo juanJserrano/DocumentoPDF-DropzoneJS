@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* base.html.php */
-class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a5ebe2 extends Template
+class __TwigTemplate_edf48974e161ee8ce45df229dde1b42580326ad53b11ce8e13b0ed2ca6bc53a5 extends Template
 {
     private $source;
     private $macros = [];
@@ -188,11 +188,36 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
         </script> -->
 
         <style>
-            footer{
+            /* footer{
                 position:absolute;
                 bottom:0;
                 left:0;
+            } */
+            .opcioneCheck{
+                margin:1em;
             }
+            .contenedorInfo{
+                width:100%;
+                height:60%;
+                padding:10px;
+                background-color:#E9ECEF;
+                border:1px solid #b5babf;
+                border-radius:5px;
+                overflow-y:scroll;
+            }
+            .contenedorInfo::-webkit-scrollbar {
+                width: 4px;     /* Tamaño del scroll en vertical */
+            }
+            .contenedorInfo::-webkit-scrollbar-thumb {
+                background: #0087F7;
+                border-radius:5px;
+            }
+            .contenedorInfo::-webkit-scrollbar-track {
+                background: #c7dff9;
+                border-radius: 4px;
+            }
+
+
         </style>
     </head>
     <body  class=\"bg-light\" >
@@ -200,16 +225,16 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
         <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">
             <a class=\"navbar-brand\" href=\"/\">
                 ";
-        // line 117
+        // line 142
         $this->displayBlock('logo', $context, $blocks);
-        // line 118
+        // line 143
         echo "            </a>
             <div class=\"collapse navbar-collapse\" id=\"navbarsAplicacionCCSM\">
                 <ul class=\"navbar-nav mr-auto\">
                     ";
-        // line 121
+        // line 146
         $this->displayBlock('menu', $context, $blocks);
-        // line 122
+        // line 147
         echo "                </ul>
             </div>
         </nav>
@@ -218,19 +243,19 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
 
         <main role=\"main\">
             ";
-        // line 129
+        // line 154
         $this->displayBlock('contenido', $context, $blocks);
-        // line 130
+        // line 155
         echo "        </main>
          <footer class=\"text-muted text-center text-small footer \">
             <p class=\"mb-1\">Cámara de Comercio de Santa Marta para el Magdalena &copy; ";
-        // line 132
+        // line 157
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</p>
             ";
-        // line 133
+        // line 158
         $this->displayBlock('piecera', $context, $blocks);
-        // line 134
+        // line 159
         echo "        </footer> 
 
         <div class = \"loader no-print\" style = \"position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999; background-color: rgba(0,0,0,0.7);\" >
@@ -258,7 +283,7 @@ class __TwigTemplate_77e8ef821621497a7984c98edf6f8791b6f22ba977379c0d05d7fb8523a
       
     
         ";
-        // line 160
+        // line 185
         $this->displayBlock('js', $context, $blocks);
         echo " 
     
@@ -296,31 +321,31 @@ gtag('config', 'G-ZBTLK22S7Q');
         $macros = $this->macros;
     }
 
-    // line 117
+    // line 142
     public function block_logo($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 121
+    // line 146
     public function block_menu($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 129
+    // line 154
     public function block_contenido($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 133
+    // line 158
     public function block_piecera($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 160
+    // line 185
     public function block_js($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -338,7 +363,7 @@ gtag('config', 'G-ZBTLK22S7Q');
 
     public function getDebugInfo()
     {
-        return array (  324 => 160,  318 => 133,  312 => 129,  306 => 121,  300 => 117,  294 => 82,  288 => 39,  262 => 160,  234 => 134,  232 => 133,  228 => 132,  224 => 130,  222 => 129,  213 => 122,  211 => 121,  206 => 118,  204 => 117,  168 => 83,  166 => 82,  139 => 58,  135 => 57,  131 => 56,  127 => 55,  120 => 51,  116 => 50,  112 => 49,  108 => 48,  99 => 42,  95 => 41,  91 => 40,  84 => 39,  44 => 1,);
+        return array (  349 => 185,  343 => 158,  337 => 154,  331 => 146,  325 => 142,  319 => 82,  313 => 39,  287 => 185,  259 => 159,  257 => 158,  253 => 157,  249 => 155,  247 => 154,  238 => 147,  236 => 146,  231 => 143,  229 => 142,  168 => 83,  166 => 82,  139 => 58,  135 => 57,  131 => 56,  127 => 55,  120 => 51,  116 => 50,  112 => 49,  108 => 48,  99 => 42,  95 => 41,  91 => 40,  84 => 39,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -448,11 +473,36 @@ gtag('config', 'G-ZBTLK22S7Q');
         </script> -->
 
         <style>
-            footer{
+            /* footer{
                 position:absolute;
                 bottom:0;
                 left:0;
+            } */
+            .opcioneCheck{
+                margin:1em;
             }
+            .contenedorInfo{
+                width:100%;
+                height:60%;
+                padding:10px;
+                background-color:#E9ECEF;
+                border:1px solid #b5babf;
+                border-radius:5px;
+                overflow-y:scroll;
+            }
+            .contenedorInfo::-webkit-scrollbar {
+                width: 4px;     /* Tamaño del scroll en vertical */
+            }
+            .contenedorInfo::-webkit-scrollbar-thumb {
+                background: #0087F7;
+                border-radius:5px;
+            }
+            .contenedorInfo::-webkit-scrollbar-track {
+                background: #c7dff9;
+                border-radius: 4px;
+            }
+
+
         </style>
     </head>
     <body  class=\"bg-light\" >

@@ -77,21 +77,24 @@ class __TwigTemplate_5ea954e3a1d9adffa46c001e48ea0f741f4f333c4cd9e65afe89cc1ee03
             </div>
         </div>
          
-        <form action=\"/file-upload\"  class=\"dropzone\" id=\"my-awesome-dropzone\">
-            <div class=\"fallback\">
-                <input name=\"file\" type=\"file\" multiple />
-            </div>
-        </form>
+    <!-- Zona de Arrastrar y soltar -->
+    <form action=\"plantilla/subir.php\" class=\"dropzone\" id=\"my-dropzone\">
+        <div class=\"fallback\">
+            <input name=\"file\" type=\"file\" multiple id=\"inputFile\"/>
+        </div>
+    </form>
+
+    </div>
     </div>
 </div>   
 ";
     }
 
-    // line 35
+    // line 38
     public function block_piecera($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 36
+        // line 39
         echo "<ul class = \"list-inline\">
     <li class = \"list-inline-item\"><a href = \"https://www.ccsm.org.co\">CamComercioSM</a></li>
     <li class = \"list-inline-item\"><a href = \"#\">Terminos y Condiciones</a></li>
@@ -100,30 +103,35 @@ class __TwigTemplate_5ea954e3a1d9adffa46c001e48ea0f741f4f333c4cd9e65afe89cc1ee03
 ";
     }
 
-    // line 43
+    // line 46
     public function block_js($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 44
+        // line 47
         echo "<script type=\"text/javascript\">
     \$(document).ready(function() {
         setTimeout(ocultarCargando, 1234);
+/*         cargarVista(\"formulario-muestra\", \"formulario\", \"nuevo\");  
+ */ 
+        /*  \$(\"div#inputFile\").dropzone({ url:'pantilla/subir.php' });
 
-        cargarVista(\"formulario-muestra\", \"formulario\", \"nuevo\"); 
-        
-    });
-
-    Dropzone.options.myAwesomeDropzone = {
+        Dropzone.options.myAwesomeDropzone = {
         paramName: \"file\", // The name that will be used to transfer the file
         maxFilesize: 2, // MB
-        dictDefaultMessage:\"Arrastra y suelta tu archivo\",
-        /* accept: function(file, done) {
+        accept: function(file, done) {
             if (file.name == \"justinbieber.jpg\") {
             done(\"Naha, you don't.\");
             }
-            else { done(\"No!!\"); }
-        } */
-    };
+            else { done(); }
+        }
+        }; */
+
+      
+    });
+         Dropzone.options.myAwesomeDropzone = false;
+        var myDropzone = new Dropzone(\"#inputFile\", { url: \"subir.php\"});
+
+
 </script>
 ";
     }
@@ -140,7 +148,7 @@ class __TwigTemplate_5ea954e3a1d9adffa46c001e48ea0f741f4f333c4cd9e65afe89cc1ee03
 
     public function getDebugInfo()
     {
-        return array (  108 => 44,  104 => 43,  95 => 36,  91 => 35,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  38 => 1,);
+        return array (  111 => 47,  107 => 46,  98 => 39,  94 => 38,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -170,11 +178,14 @@ class __TwigTemplate_5ea954e3a1d9adffa46c001e48ea0f741f4f333c4cd9e65afe89cc1ee03
             </div>
         </div>
          
-        <form action=\"/file-upload\"  class=\"dropzone\" id=\"my-awesome-dropzone\">
-            <div class=\"fallback\">
-                <input name=\"file\" type=\"file\" multiple />
-            </div>
-        </form>
+    <!-- Zona de Arrastrar y soltar -->
+    <form action=\"plantilla/subir.php\" class=\"dropzone\" id=\"my-dropzone\">
+        <div class=\"fallback\">
+            <input name=\"file\" type=\"file\" multiple id=\"inputFile\"/>
+        </div>
+    </form>
+
+    </div>
     </div>
 </div>   
 {% endblock %}
@@ -191,22 +202,27 @@ class __TwigTemplate_5ea954e3a1d9adffa46c001e48ea0f741f4f333c4cd9e65afe89cc1ee03
 <script type=\"text/javascript\">
     \$(document).ready(function() {
         setTimeout(ocultarCargando, 1234);
+/*         cargarVista(\"formulario-muestra\", \"formulario\", \"nuevo\");  
+ */ 
+        /*  \$(\"div#inputFile\").dropzone({ url:'pantilla/subir.php' });
 
-        cargarVista(\"formulario-muestra\", \"formulario\", \"nuevo\"); 
-        
-    });
-
-    Dropzone.options.myAwesomeDropzone = {
+        Dropzone.options.myAwesomeDropzone = {
         paramName: \"file\", // The name that will be used to transfer the file
         maxFilesize: 2, // MB
-        dictDefaultMessage:\"Arrastra y suelta tu archivo\",
-        /* accept: function(file, done) {
+        accept: function(file, done) {
             if (file.name == \"justinbieber.jpg\") {
             done(\"Naha, you don't.\");
             }
-            else { done(\"No!!\"); }
-        } */
-    };
+            else { done(); }
+        }
+        }; */
+
+      
+    });
+         Dropzone.options.myAwesomeDropzone = false;
+        var myDropzone = new Dropzone(\"#inputFile\", { url: \"subir.php\"});
+
+
 </script>
 {% endblock %}", "inicio.html.php", "C:\\laragon\\www\\DocumentoPDF-Dropzone\\DocumentoPDF\\plantilla\\inicio.html.php");
     }

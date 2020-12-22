@@ -500,7 +500,7 @@ function (_Emitter) {
          * Displayed if `maxFiles` is st and exceeded.
          * The string `{{maxFiles}}` will be replaced by the configuration value.
          */
-        dictMaxFilesExceeded: "You can not upload any more files.",
+        dictMaxFilesExceeded: "!Oop... maximo un archivo",
 
         /**
          * Allows you to translate the different units. Starting with `tb` for terabytes and going down to

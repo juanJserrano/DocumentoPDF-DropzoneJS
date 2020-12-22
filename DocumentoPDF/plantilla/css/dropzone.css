@@ -2,7 +2,6 @@
  * The MIT License
  * Copyright (c) 2012 Matias Meno <m@tias.me>
  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @-webkit-keyframes passing-through {
   0% {
     opacity: 0;
@@ -176,9 +175,9 @@
 
 .dropzone {
   min-height: 150px;
-  border: 2px dotted  rgba(37, 84, 184, 0.712);
-  border-radius: 20px;
-  background: rgb(255, 255, 255);
+  border: 2px dashed #0087F7;
+  border-radius:5px;
+  background: white;
   padding: 20px 20px; }
   .dropzone.dz-clickable {
     cursor: pointer; }
@@ -361,7 +360,9 @@
         -o-transition: width 300ms ease-in-out;
         transition: width 300ms ease-in-out; }
     .dropzone .dz-preview.dz-error .dz-error-message {
-      display: block; }
+      display: block; 
+      text-align: center;
+    }
     .dropzone .dz-preview.dz-error:hover .dz-error-message {
       opacity: 1;
       pointer-events: auto; }
@@ -382,14 +383,9 @@
       top: 130px;
       left: -10px;
       width: 140px;
-      text-align: center;
-      background: #ffffff;
-      background: linear-gradient(to bottom, #ffffff, #ebebeb);
-      border: 1px solid #333;
+      background: #e46666;
       padding: 0.5em 1.2em;
-      color: rgb(68, 67, 67); 
-      font-weight: bold;
-      }
+      color: white; }
       .dropzone .dz-preview .dz-error-message:after {
         content: '';
         position: absolute;
@@ -399,4 +395,4 @@
         height: 0;
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
-        border-bottom: 6px solid  #333; }
+        border-bottom: 6px solid #e46666; }

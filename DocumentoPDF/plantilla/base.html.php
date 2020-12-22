@@ -77,10 +77,7 @@
  
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!--animacion de -->
         <link rel="stylesheet" href="css/sweetalert2.min.css">
-        <link rel="stylesheet" href="css/magic/magic.min.css">
-        <link rel="stylesheet" href="dropzone-5.7.0/dist/basic.css">
-        <link rel="stylesheet" href="dropzone-5.7.0/dist/dropzone.css">
-        
+        <link rel="stylesheet" href="plantilla/css/dropzone.css">        
 
         {% block css %}{% endblock %}
 
@@ -106,11 +103,36 @@
         </script> -->
 
         <style>
-            footer{
+            /* footer{
                 position:absolute;
                 bottom:0;
                 left:0;
+            } */
+            .opcioneCheck{
+                margin:1em;
             }
+            .contenedorInfo{
+                width:100%;
+                height:60%;
+                padding:10px;
+                background-color:#E9ECEF;
+                border:1px solid #b5babf;
+                border-radius:5px;
+                overflow-y:scroll;
+            }
+            .contenedorInfo::-webkit-scrollbar {
+                width: 4px;     /* Tamaño del scroll en vertical */
+            }
+            .contenedorInfo::-webkit-scrollbar-thumb {
+                background: #0087F7;
+                border-radius:5px;
+            }
+            .contenedorInfo::-webkit-scrollbar-track {
+                background: #c7dff9;
+                border-radius: 4px;
+            }
+
+
         </style>
     </head>
     <body  class="bg-light" >
@@ -156,7 +178,7 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="dropzone-5.7.0/dist/dropzone.js"></script>
+        <script src="plantilla/js/dropzone.js"></script>
 
       
     
