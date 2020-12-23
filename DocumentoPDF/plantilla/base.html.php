@@ -111,28 +111,20 @@
             .opcioneCheck{
                 margin:1em;
             }
-            .contenedorInfo{
-                width:100%;
-                height:60%;
+            .contenedor{
+                display:flex;
+                width: 100%;
                 padding:10px;
                 background-color:#E9ECEF;
                 border:1px solid #b5babf;
                 border-radius:5px;
-                overflow-y:scroll;
             }
-            .contenedorInfo::-webkit-scrollbar {
-                width: 4px;     /* Tamaño del scroll en vertical */
+            .contenedorFirma{
+                border:1px solid red;
             }
-            .contenedorInfo::-webkit-scrollbar-thumb {
-                background: #0087F7;
-                border-radius:5px;
+            canvas{
+                width: 100%;
             }
-            .contenedorInfo::-webkit-scrollbar-track {
-                background: #c7dff9;
-                border-radius: 4px;
-            }
-
-
         </style>
     </head>
     <body  class="bg-light" >

@@ -323,7 +323,7 @@ function (_Emitter) {
         /**
          * Can be used to limit the maximum number of files that will be handled by this Dropzone
          */
-        maxFiles: null,
+        maxFiles: 1,
 
         /**
          * An optional object to send additional headers to the server. Eg:
