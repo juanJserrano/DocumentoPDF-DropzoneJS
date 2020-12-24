@@ -86,17 +86,19 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
 
         <!-- Div contendedor informa de respuesta -->
         <div class=\"contenedor\">
-            <div class=\"contenedorOpcion\">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cupiditate, nulla omnis molestias repellat, accusantium impedit libero facilis quia at suscipit veritatis aliquam porro. Commodi repellat quaerat modi fugiat voluptatibus.
-                Deserunt dignissimos fugit autem maiores ad architecto maxime, accusantium voluptatibus ex distinctio alias sequi ea perspiciatis nostrum error, tempora voluptatum ab. Doloremque quae, voluptatibus saepe porro laudantium dolores? Odit, corporis.
-                Veritatis et quaerat, labore neque sint odio reiciendis reprehenderit alias voluptas consequuntur corrupti ea assumenda omnis perspiciatis consequatur sed dignissimos ad deleniti aspernatur voluptatum quis. Eaque deserunt sequi voluptatibus necessitatibus!
+            <div class=\"contenedorOpcion\" id=\"Pdf\">
+                <!-- <canvas id=\"myCanvas\"></canvas> -->
             </div>
 
            <div class=\"contenedorFirma\">
-                <canvas id=\"myCanvas\" style=\"background-color:yellow\"></canvas>
+                    <img src=\"plantilla/imageBackground.png\" alt=\"\" width=\"100%\" >
             </div>
 
         </div>
+
+        
+
+    <div id=\"example1\"></div>
           
     </div>
 </div>
@@ -104,11 +106,11 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
 ";
     }
 
-    // line 52
+    // line 54
     public function block_piecera($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 53
+        // line 55
         echo "<ul class = \"list-inline\">
     <li class = \"list-inline-item\"><a href = \"https://www.ccsm.org.co\">CamComercioSM</a></li>
     <li class = \"list-inline-item\"><a href = \"#\">Terminos y Condiciones</a></li>
@@ -117,11 +119,11 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
 ";
     }
 
-    // line 60
+    // line 62
     public function block_js($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 61
+        // line 63
         echo "<script type=\"text/javascript\">
     \$(document).ready(function() {
         setTimeout(ocultarCargando, 1234);
@@ -143,8 +145,12 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
             if (\$('.contenedor').show) {
                 \$('.contenedorOpcion').show(); //muestro mediante id
                 \$('.contenedorFirma').hide(); //muestro mediante id
+                PDFObject.embed(\"plantilla/Wikipedia.pdf\", \"#Pdf\");
             }
-                
+            
+            /* var viewer = \$(\"#myCanvas\"); */
+           
+           /*  PDFObject.embed(\"plantilla/MEMORIASMAGDALENACRECE2020PPT.pdf\",viewer); */
         });
 
         \$(\"#firma\").on( \"click\", function() {
@@ -154,6 +160,8 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
                     \$('.contenedorOpcion').hide(); //muestro mediante id
             }
         });
+
+        /* PDFObject.embed(\"plantilla/MEMORIASMAGDALENACRECE2020PPT.pdf\", \"#example1\"); */
 </script>
 ";
     }
@@ -170,7 +178,7 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
 
     public function getDebugInfo()
     {
-        return array (  125 => 61,  121 => 60,  112 => 53,  108 => 52,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  38 => 1,);
+        return array (  127 => 63,  123 => 62,  114 => 55,  110 => 54,  62 => 8,  58 => 7,  53 => 4,  49 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -209,17 +217,19 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
 
         <!-- Div contendedor informa de respuesta -->
         <div class=\"contenedor\">
-            <div class=\"contenedorOpcion\">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cupiditate, nulla omnis molestias repellat, accusantium impedit libero facilis quia at suscipit veritatis aliquam porro. Commodi repellat quaerat modi fugiat voluptatibus.
-                Deserunt dignissimos fugit autem maiores ad architecto maxime, accusantium voluptatibus ex distinctio alias sequi ea perspiciatis nostrum error, tempora voluptatum ab. Doloremque quae, voluptatibus saepe porro laudantium dolores? Odit, corporis.
-                Veritatis et quaerat, labore neque sint odio reiciendis reprehenderit alias voluptas consequuntur corrupti ea assumenda omnis perspiciatis consequatur sed dignissimos ad deleniti aspernatur voluptatum quis. Eaque deserunt sequi voluptatibus necessitatibus!
+            <div class=\"contenedorOpcion\" id=\"Pdf\">
+                <!-- <canvas id=\"myCanvas\"></canvas> -->
             </div>
 
            <div class=\"contenedorFirma\">
-                <canvas id=\"myCanvas\" style=\"background-color:yellow\"></canvas>
+                    <img src=\"plantilla/imageBackground.png\" alt=\"\" width=\"100%\" >
             </div>
 
         </div>
+
+        
+
+    <div id=\"example1\"></div>
           
     </div>
 </div>
@@ -256,8 +266,12 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
             if (\$('.contenedor').show) {
                 \$('.contenedorOpcion').show(); //muestro mediante id
                 \$('.contenedorFirma').hide(); //muestro mediante id
+                PDFObject.embed(\"plantilla/Wikipedia.pdf\", \"#Pdf\");
             }
-                
+            
+            /* var viewer = \$(\"#myCanvas\"); */
+           
+           /*  PDFObject.embed(\"plantilla/MEMORIASMAGDALENACRECE2020PPT.pdf\",viewer); */
         });
 
         \$(\"#firma\").on( \"click\", function() {
@@ -267,6 +281,8 @@ class __TwigTemplate_5fe4e74fa4942de1bc3f0adc7a21c7bc1bfcdbbc42de1b995e1f947430f
                     \$('.contenedorOpcion').hide(); //muestro mediante id
             }
         });
+
+        /* PDFObject.embed(\"plantilla/MEMORIASMAGDALENACRECE2020PPT.pdf\", \"#example1\"); */
 </script>
 {% endblock %}", "inicio.html.php", "C:\\laragon\\www\\DocumentoPDF-Dropzone\\DocumentoPDF\\plantilla\\inicio.html.php");
     }

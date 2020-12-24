@@ -114,17 +114,26 @@
             .contenedor{
                 display:flex;
                 width: 100%;
-                padding:10px;
+                padding:1em;
                 background-color:#E9ECEF;
                 border:1px solid #b5babf;
                 border-radius:5px;
             }
-            .contenedorFirma{
-                border:1px solid red;
-            }
-            canvas{
+            .contenedorOpcion{
                 width: 100%;
+
             }
+            .contenedorFirma{
+                width: 100%;
+                height:50%;
+            }
+
+            .pdfobject-container { 
+                height: 700px;
+                background-color:red
+
+            }
+            .pdfobject { border: 1px solid #666; }
         </style>
     </head>
     <body  class="bg-light" >
@@ -171,6 +180,9 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="plantilla/js/dropzone.js"></script>
+        <script src="plantilla/js/pdfobject.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.5.207/build/pdf.min.js"></script> -->
+        
 
       
     

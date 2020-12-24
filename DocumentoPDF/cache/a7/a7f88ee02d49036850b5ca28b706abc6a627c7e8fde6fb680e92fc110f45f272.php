@@ -199,17 +199,26 @@ class __TwigTemplate_edf48974e161ee8ce45df229dde1b42580326ad53b11ce8e13b0ed2ca6b
             .contenedor{
                 display:flex;
                 width: 100%;
-                padding:10px;
+                padding:1em;
                 background-color:#E9ECEF;
                 border:1px solid #b5babf;
                 border-radius:5px;
             }
-            .contenedorFirma{
-                border:1px solid red;
-            }
-            canvas{
+            .contenedorOpcion{
                 width: 100%;
+
             }
+            .contenedorFirma{
+                width: 100%;
+                height:50%;
+            }
+
+            .pdfobject-container { 
+                height: 700px;
+                background-color:red
+
+            }
+            .pdfobject { border: 1px solid #666; }
         </style>
     </head>
     <body  class=\"bg-light\" >
@@ -217,16 +226,16 @@ class __TwigTemplate_edf48974e161ee8ce45df229dde1b42580326ad53b11ce8e13b0ed2ca6b
         <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">
             <a class=\"navbar-brand\" href=\"/\">
                 ";
-        // line 134
+        // line 143
         $this->displayBlock('logo', $context, $blocks);
-        // line 135
+        // line 144
         echo "            </a>
             <div class=\"collapse navbar-collapse\" id=\"navbarsAplicacionCCSM\">
                 <ul class=\"navbar-nav mr-auto\">
                     ";
-        // line 138
+        // line 147
         $this->displayBlock('menu', $context, $blocks);
-        // line 139
+        // line 148
         echo "                </ul>
             </div>
         </nav>
@@ -235,19 +244,19 @@ class __TwigTemplate_edf48974e161ee8ce45df229dde1b42580326ad53b11ce8e13b0ed2ca6b
 
         <main role=\"main\">
             ";
-        // line 146
+        // line 155
         $this->displayBlock('contenido', $context, $blocks);
-        // line 147
+        // line 156
         echo "        </main>
          <footer class=\"text-muted text-center text-small footer \">
             <p class=\"mb-1\">Cámara de Comercio de Santa Marta para el Magdalena &copy; ";
-        // line 149
+        // line 158
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</p>
             ";
-        // line 150
+        // line 159
         $this->displayBlock('piecera', $context, $blocks);
-        // line 151
+        // line 160
         echo "        </footer> 
 
         <div class = \"loader no-print\" style = \"position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999; background-color: rgba(0,0,0,0.7);\" >
@@ -271,11 +280,14 @@ class __TwigTemplate_edf48974e161ee8ce45df229dde1b42580326ad53b11ce8e13b0ed2ca6b
         <script src=\"js/plugins.js\"></script>
         <script src=\"js/main.js\"></script>
         <script src=\"plantilla/js/dropzone.js\"></script>
+        <script src=\"plantilla/js/pdfobject.js\"></script>
+        <!-- <script src=\"https://cdn.jsdelivr.net/npm/pdfjs-dist@2.5.207/build/pdf.min.js\"></script> -->
+        
 
       
     
         ";
-        // line 177
+        // line 189
         $this->displayBlock('js', $context, $blocks);
         echo " 
     
@@ -313,31 +325,31 @@ gtag('config', 'G-ZBTLK22S7Q');
         $macros = $this->macros;
     }
 
-    // line 134
+    // line 143
     public function block_logo($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 138
+    // line 147
     public function block_menu($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 146
+    // line 155
     public function block_contenido($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 150
+    // line 159
     public function block_piecera($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 177
+    // line 189
     public function block_js($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -355,7 +367,7 @@ gtag('config', 'G-ZBTLK22S7Q');
 
     public function getDebugInfo()
     {
-        return array (  341 => 177,  335 => 150,  329 => 146,  323 => 138,  317 => 134,  311 => 82,  305 => 39,  279 => 177,  251 => 151,  249 => 150,  245 => 149,  241 => 147,  239 => 146,  230 => 139,  228 => 138,  223 => 135,  221 => 134,  168 => 83,  166 => 82,  139 => 58,  135 => 57,  131 => 56,  127 => 55,  120 => 51,  116 => 50,  112 => 49,  108 => 48,  99 => 42,  95 => 41,  91 => 40,  84 => 39,  44 => 1,);
+        return array (  353 => 189,  347 => 159,  341 => 155,  335 => 147,  329 => 143,  323 => 82,  317 => 39,  291 => 189,  260 => 160,  258 => 159,  254 => 158,  250 => 156,  248 => 155,  239 => 148,  237 => 147,  232 => 144,  230 => 143,  168 => 83,  166 => 82,  139 => 58,  135 => 57,  131 => 56,  127 => 55,  120 => 51,  116 => 50,  112 => 49,  108 => 48,  99 => 42,  95 => 41,  91 => 40,  84 => 39,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -476,17 +488,26 @@ gtag('config', 'G-ZBTLK22S7Q');
             .contenedor{
                 display:flex;
                 width: 100%;
-                padding:10px;
+                padding:1em;
                 background-color:#E9ECEF;
                 border:1px solid #b5babf;
                 border-radius:5px;
             }
-            .contenedorFirma{
-                border:1px solid red;
-            }
-            canvas{
+            .contenedorOpcion{
                 width: 100%;
+
             }
+            .contenedorFirma{
+                width: 100%;
+                height:50%;
+            }
+
+            .pdfobject-container { 
+                height: 700px;
+                background-color:red
+
+            }
+            .pdfobject { border: 1px solid #666; }
         </style>
     </head>
     <body  class=\"bg-light\" >
@@ -533,6 +554,9 @@ gtag('config', 'G-ZBTLK22S7Q');
         <script src=\"js/plugins.js\"></script>
         <script src=\"js/main.js\"></script>
         <script src=\"plantilla/js/dropzone.js\"></script>
+        <script src=\"plantilla/js/pdfobject.js\"></script>
+        <!-- <script src=\"https://cdn.jsdelivr.net/npm/pdfjs-dist@2.5.207/build/pdf.min.js\"></script> -->
+        
 
       
     

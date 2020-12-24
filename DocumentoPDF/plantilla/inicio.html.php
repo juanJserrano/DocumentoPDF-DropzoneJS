@@ -32,17 +32,19 @@
 
         <!-- Div contendedor informa de respuesta -->
         <div class="contenedor">
-            <div class="contenedorOpcion">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cupiditate, nulla omnis molestias repellat, accusantium impedit libero facilis quia at suscipit veritatis aliquam porro. Commodi repellat quaerat modi fugiat voluptatibus.
-                Deserunt dignissimos fugit autem maiores ad architecto maxime, accusantium voluptatibus ex distinctio alias sequi ea perspiciatis nostrum error, tempora voluptatum ab. Doloremque quae, voluptatibus saepe porro laudantium dolores? Odit, corporis.
-                Veritatis et quaerat, labore neque sint odio reiciendis reprehenderit alias voluptas consequuntur corrupti ea assumenda omnis perspiciatis consequatur sed dignissimos ad deleniti aspernatur voluptatum quis. Eaque deserunt sequi voluptatibus necessitatibus!
+            <div class="contenedorOpcion" id="Pdf">
+                <!-- <canvas id="myCanvas"></canvas> -->
             </div>
 
            <div class="contenedorFirma">
-                <canvas id="myCanvas" style="background-color:yellow"></canvas>
+                    <img src="plantilla/imageBackground.png" alt="" width="100%" >
             </div>
 
         </div>
+
+        
+
+    <div id="example1"></div>
           
     </div>
 </div>
@@ -79,8 +81,12 @@
             if ($('.contenedor').show) {
                 $('.contenedorOpcion').show(); //muestro mediante id
                 $('.contenedorFirma').hide(); //muestro mediante id
+                PDFObject.embed("plantilla/Wikipedia.pdf", "#Pdf");
             }
-                
+            
+            /* var viewer = $("#myCanvas"); */
+           
+           /*  PDFObject.embed("plantilla/MEMORIASMAGDALENACRECE2020PPT.pdf",viewer); */
         });
 
         $("#firma").on( "click", function() {
@@ -90,5 +96,7 @@
                     $('.contenedorOpcion').hide(); //muestro mediante id
             }
         });
+
+        /* PDFObject.embed("plantilla/MEMORIASMAGDALENACRECE2020PPT.pdf", "#example1"); */
 </script>
 {% endblock %}
